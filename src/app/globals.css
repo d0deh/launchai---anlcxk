@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #0d4d2b;
+  --color-secondary: #1a6b45;
+  --color-accent: #F8C662;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Cairo', 'Tajawal', sans-serif; direction: rtl; text-align: right; }
+.whatsapp-float {
+  position: fixed; bottom: 24px; left: 24px; z-index: 1000;
+  width: 60px; height: 60px; border-radius: 50%; background: #25D366;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: transform 0.3s; cursor: pointer;
+}
+.whatsapp-float:hover { transform: scale(1.1); }
